@@ -1,5 +1,6 @@
-package coding.java;
+package testing;
 
+import learnjava.Printer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,15 +8,21 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class PrinterTest {
     ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    Printer myPrinter = new Printer();
+    Printer myPrinter =  new Printer();
+    private final PrintStream originalOut = System.out;
 
     @Before
     public void setup(){
         System.setOut(new PrintStream(outContent));
+    }
+
+    @After
+    public void tearDown() {
+        System.setOut(originalOut);
     }
 
     @Test
