@@ -21,3 +21,6 @@
 
 # Ignore Gradle build output directory
 build
+
+#System
+.DS_Store
