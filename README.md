@@ -1,5 +1,18 @@
-# coding-101-java
-This project contains a set of unit tests to guide the hands-on learning journey for the coding-101 participants. The idea is that the participants don't need to know the details of the unit tests located inside `src/main/testing`. For each test class a class with boilerplate method bodies exists inside `src/main/learnjava`. Based on these pre-defined classes and the test output printed to the console for the existing test suites their task will be to fix the failing tests by filling the empty methods with the expected logic. 
+# Coding-101-java
+This project contains a set of unit tests to guide a hands-on learning journey to coding basics. The used project language is java. 
+The exercises are supposed to be used in combination with some kind of learning material (presentation/handouts) that cover the following topics:
+* variables and data types
+* logging to the console
+* arithmetic, relational and logical operators
+* decision making (if-else clauses, loops)
+* classes and functions
+
+
+## Concept
+For each test class located in `src/main/testing` a respective class exists inside `src/main/learnjava`. The classes provide boilerplate method bodies and signatures, which will need to be filled in order to make all tests pass.  
+
+When running the unit tests, there will be test output printed to the console stating the expected behavior for a given method. If necessary there will be dummy return values in the methods or additional comments for comprehension.
+The idea is that the participants don't need to know the details of the unit tests located inside `src/main/testing`.  
 
 
 
@@ -7,3 +20,10 @@ This project contains a set of unit tests to guide the hands-on learning journey
 ## How to use
 This repository is meant to be imported to https://repl.it/ in order to remove the overhead of setting up IDEs on the participants computers. The file `.replit` contains the commands that will be executed by repl.it when the participant presses the "Run" Button in the UI.
 
+To provide the coding-101 to your students, follow these steps:
+* sign up at https://repl.it/
+* hit *import repo* on the top right of the screen
+* import this repo `https://github.com/ZuckerWatte/coding-101-java`
+* now you can copy the link out of your browser url bar and share it with your students
+* in order to be able to edit the code your students will have to *fork* the replit
+* there's a *fork* button on the top center of the page above the code editor 
