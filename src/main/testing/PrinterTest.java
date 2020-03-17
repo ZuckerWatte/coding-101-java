@@ -26,16 +26,18 @@ public class PrinterTest {
     }
 
     @Test
-    public void testPrinting() {
+    public void shouldPrintGivenTextToConsole() {
         String expectedOutput = "Hello World!";
         myPrinter.print(expectedOutput);
-        assertEquals("prints the given text to standard output", expectedOutput, outContent.toString());
+        String failureMessage = "\f failed to print the given text to the console.\n";
+        assertEquals(failureMessage, expectedOutput, outContent.toString());
     }
 
     @Test
-    public void testDefaultPrinting() {
+    public void shouldPrintDefaultTextWhenNoTextGiven() {
         String expectedOutput = "Hello Default!";
         myPrinter.print("");
-        assertEquals("prints a default text if no text is given", expectedOutput, outContent.toString());
+        String failureMessage = "\f failed to print the default text when no text was given.\n";
+        assertEquals(failureMessage, expectedOutput, outContent.toString());
     }
 }
