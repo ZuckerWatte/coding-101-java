@@ -29,7 +29,7 @@ To provide the coding-101 to your students, follow these steps:
 * there's a *fork* button on the top center of the page above the code editor 
 
 ## Run on a local machine
-To run the tests locally you only need to make sure you have a valid java installation on your operating system. Testing dependencies are bundled with the project to ensure consistent behavior for development and on repl.it 
+To run the tests locally you only need to make sure you have a valid [java installation](https://java.com/en/download/help/index_installing.xml) on your operating system. Testing dependencies are bundled with the project to ensure consistent behavior for development and on repl.it 
 
 To run the test suites execute the command specified in the `.replit` file:
 ```
